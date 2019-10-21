@@ -1,6 +1,6 @@
 package camunda_client_go
 
-import camunda_client_go "github.com/citilinkru/camunda-client-go"
+import camunda_client_go "github.com/legendik/camunda-client-go"
 
 // Message a client for Message API
 type Message struct {
