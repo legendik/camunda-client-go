@@ -1,7 +1,5 @@
 package camunda_client_go
 
-import camunda_client_go "github.com/legendik/camunda-client-go"
-
 // Message a client for Message API
 type Message struct {
 	client *Client
@@ -20,7 +18,7 @@ type ReqMessageCreate struct {
 	WithoutTenantId   *bool                                  `json:"withoutTenantId,omitempty"`
 	ProcessInstanceId *string                                `json:"processInstanceId,omitempty"`
 	CorrelationKeys   *map[string]CorrelationKeySet          `json:"correlationKeys,omitempty"`
-	ProcessVariables  *map[string]camunda_client_go.Variable `json:"processVariables,omitempty"`
+	ProcessVariables  *map[string]Variable `json:"processVariables,omitempty"`
 	All               *bool                                  `json:"all,omitempty"`
 }
 
