@@ -37,6 +37,7 @@ type Client struct {
 
 	ExternalTask      *ExternalTask
 	Deployment        *Deployment
+	Message           *Message
 	ProcessDefinition *ProcessDefinition
 	UserTask          *userTaskApi
 }
@@ -109,6 +110,7 @@ func NewClient(options ClientOptions) *Client {
 
 	client.ExternalTask = &ExternalTask{client: client}
 	client.Deployment = &Deployment{client: client}
+	client.Message = &Message{client: client}
 	client.ProcessDefinition = &ProcessDefinition{client: client}
 	client.UserTask = &userTaskApi{client: client}
 
